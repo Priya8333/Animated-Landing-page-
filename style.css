@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    width:100%;
+    height: 100vh;
+    
+}
+#back{
+    width:100%;
+    height: 100vh;
+    background-color: rgb(157, 107, 107);
+}
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+#top{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100vh;
+   
+    pointer-events: none;
+}
+.top.workingarea{
+    width: 50%;
+    max-width: 1940px;
+    height: 100vh;
+    background: #888;
+    margin: 0 auto;
+    border: 1px solid red;
+    position: relative;
+}
+#nav{
+    width:100%;
+    padding:30px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: all;
+}
+#nav img{
+    height: 60px;
+}
+#nleft,#nright{
+    display:flex;
+    align-items: center;
+    gap: 60px;
+}
+#nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#hero{display:flex;
+    width:100%;
+    height: 350px;
+    
+    justify-content: space-between;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translate(0,-50%);
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+#heroleft{
+    min-width:50%;
+    height: 1800px;
+    
+}
+#heroleft .elem{
+    height: 7vw;
+    position: relative;
+    overflow: hidden;
+}
+#heroleft .elem h1:nth-child(1){
+    top:0;
+}
+#heroleft .elem h1{
+    line-height: 1;
+    position: absolute;
+    font-family: "kajiro";
+    font-weight: 100;
+    font-size: 8vw;
+    color:white;
+    top: 100%;
+    left: 0;
+}
+
+#heroleft button{
+padding: .8vw 2vw;
+font-size: 3vw;
+font-family: "kajiro";
+background-color: white;
+color: black;
+pointer-events: all;
+}
+#heroright{
+    width:25%;
+    
+   color: white;
+   display: flex;
+   flex-direction: column;
+align-items: flex-end;
+
+}
+#heroleft p{
+font-size: 12px;
+font-weight: 100;
+text-align: leftt;
+}
+#heroright p{
+    font-size: 14px;
+    font-weight: 300px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+#heroright .imagediv{
+    width:100%;
+    height:400px;
+   
+    margin-top: 20px;
+    margin-bottom: 30px;
+   background-image: url(https://unsplash.com/photos/woman-in-black-hat-8BxRYuPkzkU);
+   background-position: center;
+   background-size: cover;
+}
+#heroright p:nth-child(3){
+    margin-bottom: 100px;
+}
